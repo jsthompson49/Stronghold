@@ -3,21 +3,19 @@ package org.usfirst.frc.team3407.robot.subsystems;
 
 import edu.wpi.first.wpilibj.RobotDrive;
 import edu.wpi.first.wpilibj.Timer;
-//import edu.wpi.first.wpilibj.SpeedController;
-//import edu.wpi.first.wpilibj.Victor;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
-import org.usfirst.frc.team3407.robot.commands.*;;
+import org.usfirst.frc.team3407.robot.commands.Drive;
 
 /**
  *
  */
-public class drivetrain extends Subsystem {
+public class DriveTrain extends Subsystem {
     
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
 	private RobotDrive drive;
-	public drivetrain() {
+	public DriveTrain() {
 		drive = new RobotDrive(0, 1);
 		drive.setSafetyEnabled(false);
 		drive.setSensitivity(0.75);

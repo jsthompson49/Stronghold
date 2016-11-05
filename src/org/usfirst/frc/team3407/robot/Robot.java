@@ -1,10 +1,9 @@
 
 package org.usfirst.frc.team3407.robot;
-//import javax.swing.JOptionPane;
 
 import org.usfirst.frc.team3407.robot.commands.AutonomousCommand;
 import org.usfirst.frc.team3407.robot.subsystems.Shooter;
-import org.usfirst.frc.team3407.robot.subsystems.drivetrain;
+import org.usfirst.frc.team3407.robot.subsystems.DriveTrain;
 
 import edu.wpi.first.wpilibj.CameraServer;
 import edu.wpi.first.wpilibj.IterativeRobot;
@@ -23,7 +22,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
  */
 public class Robot extends IterativeRobot {
 
-	public static drivetrain drivetrain = new drivetrain();
+	public static DriveTrain drivetrain = new DriveTrain();
 	public static Shooter shooter = new Shooter();
 
     Command autonomousCommand;
